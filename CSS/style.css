@@ -1,238 +1,72 @@
-/*  
-*{
-    box-sizing: border-box
- }
-.menu{
-    width: 25%;
-    float: left;
-    background-color:aqua;
-}
-.main{
-    width: 75%;
-    float: left;
-    background-color:green;
-
-}
-/*untuk membaca semua class yg berawalan "col-"  *//*
-[class*="col-"]{
-    float: left;
-    padding: 15px;
-}
-
-
-.col-1 {width:8,33%;}  
-.col-2 {width:16.66%}
-.col-3 {width:25%;} 
-.col-4 {width:33,33%}
-.col-5 {width:41,66%;}
-.col-6 {width:50%;}
-.col-7 {width:58,33%}
-.col-8 {width:66,66%}
-.col-9 {width:75%}
-.col-10 {width:83,33%;}
-.col-11 {width:91,66%;}
-.col-12 {width:100%;}
-
-/*screen akan berubah ketika screen dibawah 500  *//*
-@media only screen and (max-width: 500px){
-
-    body{
-        background-color: lightblue;
-    }
-    /*.col-sm- berlaku jika   *//*
-.col-sm-1 {width:8,33%;}  
-.col-sm-2 {width:16.66%}
-.col-sm-3 {width:25%;} 
-.col-sm-4 {width:33,33%}
-.col-sm-5 {width:41,66%;}
-.col-sm-6 {width:50%;}
-.col-sm-7 {width:58,33%}
-.col-sm-8 {width:66,66%}
-.col-sm-9 {width:75%}
-.col-sm-10 {width:83,33%;}
-.col-sm-11 {width:91,66%;}
-.col-sm-12 {width:100%;}
-
-}
-*/
 body{
-    font-family: 'PT Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 13px;
-}
-
-.header {
-    display: block;
-    width: 100%;
-    text-align: center;
-    background: url('../css/header.1.png') no-repeat center center scroll;
-    background-size: cover;
-    padding-top: 80px;
-    padding-bottom: 30px;
-}
-
-.header-name{
-    font-size: 2.5em;
-    font-weight: bold;
-    color: white;
-    margin-top: 35px;
-}
-
-.header-occupation{
-    font-size: 1.3em;
-    font-weight: bold;
-    color: #5dc2d8;
-}
-
-.header-tagline{
-    color: white;
-}
-
-.profile-image{
-    margin: auto; 
-    max-height: 250px; 
-    border: 6px solid #8c8c8c;
+    margin: 0px;
 }
 
 /*HEADER*/
- .section-title1{font-size: 2.5em;
-    font-weight: bold;
-    color:wheat;
-    background: url('../css/header.1.png');
-    margin-bottom: 10px}
+header {background: url(../img/back2.jpg) no-repeat center scroll;
+        background-size: cover;
+/*semua isi header posisiny center  */
+text-align: center; 
+/*untuk memberikan jarak content  */
+padding: 50px 0px 30px 0px }
 
-   
 
-.about-info{
-    text-align: left;
-    border-bottom: dashed 1px;   
-    padding: 10px 10px 10px 0px;
+#profile-name{
+      font-size: 2.5em;
+      color: white;
+}
+#profile-job-title{
+    font-size: 1.7em;
+    color: blue;
+
+}
+#profile-tagline{
+    font-size: 1.3em;
+    color:white;
+    
+}
+#profile-image{
+    height: 100%;
+    border:solid 3px gre;
 }
 
-.about-img{
-    max-width: 450px;
-    min-width: 300px;
-    border: 6px solid #8c8c8c;
+.custom-navbar{
+    border-radius:0px;
+    border:none;
+    color:white;
+}
+.custom-navbar .navbar-nav > li> a{
+    color:white;
 }
 
-.about-img-container{
-    float: right;
-}
-
-.row.row-eq-height {
-    display: flex;
-}
-
-@media only screen and (max-width: 850px) {
-    .about-img-container{
-        float: none;
-    }
-    .row.row-eq-height {
-        display: initial;
-    }
-}
-
-
-/*ABOUT*/
-
-
-
-/*MY EDUCATION*/
-
-#myeducation{
-    background-color:#cecece;
-    min-height: 500px;
-}
-
-.myeducation-container{
-    padding: 30px;
-    text-align: left;
-}
-
-.myeducation-year{
-    border-left: 4px solid #ff8738;
-    padding-left: 10px;
-}
-
-.myeducation-underline{
-    border-color: black;
-}
-
-/*MY SKILL*/
-
-.myskill-bg-image {
-    display: block;
-    text-align: center;
-    background: url('../css/header.1.png') no-repeat center center scroll;
-    background-size: cover;
-    height: inherit;
-}
-
-.myskill-title{
-    color: white;
-}
-
-.myskill-container{
-    padding: 30px;
-    text-align: left;
-    color: white;
-}
-
-.myskill-progress-title{
-    padding: 10px 10px 10px 0px;
-}
-
-/*MY SKILL*/
-
-/*CONTACT*/
-
-#contact{
-    padding-bottom: 50px;
-}
-
-.contact-input{
-    border-radius: 0px;
-    background-color: rgba(0, 0, 0, 0.1);
-}
-
-.contact-button{
-    background-color: black;
-    color: white;
-    border-radius: 0px;
-    width: 100%;
-}
-
-/*CONTACT*/
-
-
-/*FOOTER*/
-
-footer {
-    padding: 20px;
-    background-color: black;
-    color: white;
-}
-
-/*FOOTER*/
-
-
-/*GENERAL*/
-
-hr {
-    margin-top: 5px;
-    margin-bottom: 10px;
-}
-
-.section{
-    text-align: center;
-    margin-bottom: 25px;
-}
-
+/*about  */
 .section-title{
+    text-align: center;
     font-size: 2em;
     font-weight: bold;
-    margin-top:20px;
-    margin-bottom: 20px;
+}
+#about{margin-top:2em;
+       margin-bottom:2em;}
+
+#about-image{float: right;
+            border: 4px solid black;}
+
+@media only screen and (max-width:1024px){
+    #about-image{
+        float: none;
+        display: block;
+        margin: auto;
+        border: 4px solid #4d4d4d; 
+    }
+
 }
 
-/*GENERAL*/
+.about-info {border-bottom: dashed 2px black;
+            }
+/* my education */
+#myeducation {background: url(../img/body.jpg) no-repeat center scroll;
+    background-size: cover;}
 
+    .myeducation-underline {border-color: #1C0E0E }
