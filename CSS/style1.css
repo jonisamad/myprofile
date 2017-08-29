@@ -1,0 +1,72 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    margin: 0px;
+}
+
+/*HEADER*/
+header {background: url(../img/back2.jpg) no-repeat center scroll;
+        background-size: cover;
+/*semua isi header posisiny center  */
+text-align: center; 
+/*untuk memberikan jarak content  */
+padding: 50px 0px 30px 0px }
+
+
+#profile-name{
+      font-size: 2.5em;
+      color: white;
+}
+#profile-job-title{
+    font-size: 1.7em;
+    color: blue;
+
+}
+#profile-tagline{
+    font-size: 1.3em;
+    color:white;
+    
+}
+#profile-image{
+    height: 100%;
+    border:solid 3px gre;
+}
+
+.custom-navbar{
+    border-radius:0px;
+    border:none;
+    color:white;
+}
+.custom-navbar .navbar-nav > li> a{
+    color:white;
+}
+
+/*about  */
+.section-title{
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+#about{margin-top:2em;
+       margin-bottom:2em;}
+
+#about-image{float: right;
+            border: 4px solid black;}
+
+@media only screen and (max-width:1024px){
+    #about-image{
+        float: none;
+        display: block;
+        margin: auto;
+        border: 4px solid #4d4d4d; 
+    }
+
+}
+
+.about-info {border-bottom: dashed 2px black;
+            }
+/* my education */
+#myeducation {background: url(../img/body.jpg) no-repeat center scroll;
+    background-size: cover;}
+
+    .myeducation-underline {border-color: #1C0E0E }
